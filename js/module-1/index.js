@@ -96,8 +96,8 @@ console.log("Max:", max);
 
 // b,c
 let f = 0;
-for (let i = 0; i < list.length; i++) {
-  if (isPrime(list[i])) {
+for (const element of list) {
+  if (isPrime(element)) {
     console.log("List has a prime no:");
     break;
   }
