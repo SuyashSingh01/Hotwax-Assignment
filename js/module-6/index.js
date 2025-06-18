@@ -5,7 +5,10 @@ const secondColumnCells = table.querySelectorAll("tr td:nth-child(2)");
 console.log(secondColumnCells);
 
 secondColumnCells.forEach((cell) => {
-  cell.addEventListener("click", function () {
-    cell.style.backgroundColor = "lightblue";
-  });
+  cell.addEventListener("click", myCb);
 });
+
+function myCb(event) {
+  const cell = event.target;
+  cell.style.backgroundColor = "lightblue";
+}
