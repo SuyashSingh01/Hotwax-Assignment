@@ -78,3 +78,11 @@ a {
 [dj|="en"] {
   background-color: #a59292;
 }
+
+.dynamic-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
