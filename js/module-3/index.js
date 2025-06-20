@@ -27,6 +27,7 @@ const obj = [
 
 const youngestOne = Math.min(...obj.map((item) => item.age));
 const oldestOne = Math.max(...obj.map((item) => item.age));
+
 const yougestPerson = obj.find((item) => item.age === youngestOne);
 const oldestPerson = obj.find((item) => item.age === oldestOne);
 
@@ -49,6 +50,8 @@ console.log("Oldest Person:", oldestPerson.id, oldestPerson.name);
 // console.log(a);
 // let a;
 // Answer:- Program 1 is a valid case of hoisting, while Program 2 is not.
+
+// ---------------------------------------Practice Code------------------------------------------
 
 // Practice with alerts,prompts, and confirms
 alert("Welcome to the JavaScript Practice!");
@@ -115,3 +118,42 @@ const person2 = new Person("Amit", 30);
 person1.greet(); // Output: Hello, my name is Suyash and I am 23 years old.
 person2.greet(); // Output: Hello, my name is Amit and I am 30 years old.
 person1.eat(); // Output: Suyash is eating.
+
+// Classes and Inheritance
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hi, ${this.name}`);
+  }
+}
+
+const u = new User("Suyash");
+u.greet(); // Hi, Suyash
+
+// // Inheritance
+class Admin extends User {
+  constructor(name, role) {
+    super(name);
+    this.role = role;
+  }
+
+  greet() {
+    console.log(`Hi, ${this.name}, you are an ${this.role}`);
+  }
+}
+const a = new Admin("Amit", "Admin");
+a.greet(); // Hi, Amit, you are an Admin
+
+// //Extending the built in method of Array
+
+class MyArray extends Array {
+  first() {
+    return this[0];
+  }
+}
+
+const arr = new MyArray(1, 2, 3);
+console.log(arr.first()); // 1

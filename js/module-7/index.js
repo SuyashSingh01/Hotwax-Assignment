@@ -1,4 +1,5 @@
-// Task: To create a textarea and if a user makes changes to it without saving then show an alert that data is not saved.
+// Task:
+// 1 To create a textarea and if a user makes changes to it without saving then show an alert that data is not saved.
 
 const textarea = document.createElement("textarea");
 textarea.placeholder = "Type something here...";
@@ -17,7 +18,7 @@ window.addEventListener("beforeunload", function (event) {
   }
 });
 
-// Change the color of the cell to red when the user clicks on a cell and revert when the user again clicks
+//2 Change the color of the cell to red when the user clicks on a cell and revert when the user again clicks
 textarea.addEventListener("click", function () {
   if (textarea.style.backgroundColor === "red") {
     textarea.style.backgroundColor = "";

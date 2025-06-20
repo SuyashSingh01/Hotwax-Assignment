@@ -59,7 +59,6 @@ console.log("List has a prime no:", hasPrime);
 // Note: Use map(), filter(), reduce(), some() and every() methods for above problems
 
 // 6.  Provided an array of integers, find if there are any duplicates in the array.
-
 // Output:
 // true -  if any value appears at least twice in the array,
 // false - if every element is distinct.

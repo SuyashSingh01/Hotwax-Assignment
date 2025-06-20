@@ -1,32 +1,20 @@
 // Javascript Practice
-
-//  1 Find out about the most popular JavaScript frameworks. (At least 5)
-// 2. Find out about the most popular open-source JavaScript frameworks. (At least 5)
-// 3. Provided the following  array:
-//     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-//    Filter out odd, even, and prime numbers and print them
-// 4. Provided the following  array:
-//     [0, 2, 4, 6, 8, 10, 12, 14, 16]
-// Generate and print another list such that:
-//  a. every element being twice of elements in the current list.
-//  b. every element being half of the elements in the current list.
-// 5. Provided the following  array:
-//     [10, 1, 42, 36, 4, 75, 6, 97, 81, 19, 10]
-//   a. Find the sum, min, and max
-//   b. Print “List is full of prime no” if every element is prime
-//   c. Print “List has a prime no” if there is a prime no in it
-//   d. Remove duplicate values from the list ()
 // Note.Use the loop for above problems, not the built-in methods.
 
 //  ANSWERS
-//1  "React","Angular","Vue.js", "Svelte","Ember.js"
-//2  "React","Angular","Vue.js", "Svelte","Ember.js"
 
-// 3
+// 1 Find out about the most popular JavaScript frameworks. (At least 5)
+// 1 Ans: "React","Angular","Vue.js", "Svelte","Ember.js"
 
-console.log("Odd Numbers:");
+// 2. Find out about the most popular open-source JavaScript frameworks. (At least 5)
+// 2 Ans: "React","Angular","Vue.js", "Svelte","Ember.js"
+
+// 3. Provided the following  array:
+//     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//    Filter out odd, even, and prime numbers and print them
 
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log("Odd Numbers:");
 const oddNumbers = [];
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] % 2 !== 0) {
@@ -63,7 +51,12 @@ console.log("Even Numbers:", evenNumbers);
 console.log("Odd Numbers:", oddNumbers);
 console.log("Prime Numbers:", primeNumbers);
 
-// 4
+// 4. Provided the following  array:
+//     [0, 2, 4, 6, 8, 10, 12, 14, 16]
+// Generate and print another list such that:
+//  a. every element being twice of elements in the current list.
+//  b. every element being half of the elements in the current list.
+
 const originalArray = [0, 2, 4, 6, 8, 10, 12, 14, 16];
 // a
 const doubledArray = [];
@@ -79,7 +72,12 @@ for (let i = 0; i < originalArray.length; i++) {
 console.log("Doubled Array:", doubledArray);
 console.log("Halved Array:", halvedArray);
 
-// 5
+// 5. Provided the following  array:
+//     [10, 1, 42, 36, 4, 75, 6, 97, 81, 19, 10]
+//   a. Find the sum, min, and max
+//   b. Print “List is full of prime no” if every element is prime
+//   c. Print “List has a prime no” if there is a prime no in it
+//   d. Remove duplicate values from the list ()
 const list = [10, 1, 42, 36, 4, 75, 6, 97, 81, 19, 10];
 let sum = 0,
   min = Infinity,
