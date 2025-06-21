@@ -1,0 +1,27 @@
+/* Task
+You are writing a responsive layout for a website that has dramatically different layouts for mobile and desktop. Which of the following media queries would you use and why?
+
+@media (max-width: …
+@media (min-width: …
+
+
+*/
+
+/* Answer
+You would use @media (max-width: ...) for mobile layouts and @media (min-width: ...) for desktop layouts. The max-width query applies styles when the viewport width is less than or equal to a specified value, which is ideal for mobile devices. Conversely, the min-width query applies styles when the viewport width is greater than or equal to a specified value, suitable for desktop devices.
+*/
+
+@media (max-width: 600px) {
+  /* Styles for mobile devices */
+  body {
+    background-color: lightblue;
+    font-size: 14px;
+  }
+}
+@media (min-width: 601px) {
+  /* Styles for desktop devices */
+  body {
+    background-color: lightgreen;
+    font-size: 18px;
+  }
+}
