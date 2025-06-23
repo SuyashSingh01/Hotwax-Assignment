@@ -1,14 +1,13 @@
 <template>
-  <HelloWorld msg="Hello World" />
+  <Auth />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Auth from "./components/Auth.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Auth,
   },
 };
 </script>
